@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+          <meta charset="UTF-8">
+          <meta name ="viewport" content="width-device-width, initial-scale-1.0">
+          <title> Cadastro </title>
+
+
+
+    </head>
+
+
+    <body>
+        <div> 
+            <h1> id "titulo" Cadatro de Clientes </h1>
+            <p> id "subtitulo" Complete as informaçãoes abaixo:</p>
+            <br>
+        </div>
+        <form>
+            <fieldset>
+                <div>
+                    <label>Nome </label>
+                    <input type= "text" name = "nome" id="nome">
+                </div>
+                    <label> Sobrenome </label>
+                    <input type = "text" name = sobrenome id ="sobrenome">
+            </fieldset>
+                  <div>
+                      <label>Email</label>
+                      <input type="email" name = email id = "email">
+                  </div>
+                  <div> 
+                      <Label> Qual sua idade ?
+                      <input type ="radio" name = "numero" value = "0-17"> 0-17
+                    </Label>
+                    <label>
+                        <input type="radio" name="numero" value="18-30"> 18-30
+                    </label>
+                    <label>
+                        <input type="radio" name="numero" value="31-60"> 31-60
+                    </label>
+                  </div>   
+                  <div>
+                      <label> Estado </label>
+                      <select id="Estados">
+                          <option Select disabled value =""> Selecione</option>
+                          <option>AC</option>
+                          <option>Al</option>
+                          <option>SP</option>
+                          <option>BA</option>
+                          <option>RJ</option>
+                          <option>SC</option>
+                          <option>PB</option>
+                      </select>
+                      <fieldset>
+
+                        <div>
+                            <label> Selecione seu sexo biológico:</label><br><br>
+                            <input type="checkbox" id="sexo" name="sexo" value="Masculino">
+                            <label for="sexo">Masculino</label>
+                            <input type = "checkbox" id="Area" name="area" value="Femenino"> 
+                            <label for="sexo">Femenino</label>
+                        </div>
+                      </fieldset>
+                  <div>
+                      <br>
+                      <label> Fale sobre seus jogos favoritos: </label>
+                      <textarea row="8" style= "width: 26em" id="jogos favoritos" name="jogos favoritos"></textarea>
+                      </div>   
+                      <button type "subimit"> Salvar</button>
+        </form>
+     </body>   
+</html>
