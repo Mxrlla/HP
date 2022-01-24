@@ -43,7 +43,7 @@ fieldset{
     margin-right: 1em;
 }
 
-.campo input type= "text", .campo input type= "email", .cargo select,.cargo select areatext{
+.campo input type ="text", .campo input type= "email", .cargo select,.cargo select areatext{
     padding: 0.2em;
     border: 1px solid #59429d;
     box-shadow: 2px 2px 2px, rgba(0,0,0.2);
@@ -54,7 +54,7 @@ fieldset{
     padding-right: 1em;
 }
 
-.campo input: focus, .camposelect:focus, .campos textarea:focus{
+.campo input focus, .camposelect:focus, .campos textarea:focus{
     background: #e0e0f8;
 }
 
@@ -78,4 +78,8 @@ fieldset{
     background: #ccbbff;
     box-shadow: inset 2px, 2px 2px rbga(0,0,0,0.2);
     text-shadow: none;
+}
+
+.botao select{
+    cursor: pointer;
 }
