@@ -4,41 +4,96 @@
           <meta charset="UTF-8">
           <meta name ="viewport" content="width-device-width, initial-scale-1.0">
           <link rel= "stylesheet" type= "text/css" href="formulário.css" media="screen">
+
           <title> Cadastro </title>
 
+          <style>
+              body{
+                  font-family: sans-serif, arial;
+                  background-image: linear-gradient(to left, rgb(245, 146, 245),rgb(255, 188, 210));
+              }
+              .box{
+                  position: absolute;
+                  top: 50%;
+                  left:25%;
+                  transform:translate(-50%, -50%);
+                  background-color: rgba(0, 0, 0,0. 8);
+                  padding: 15px;
+                  border-radius: 15px;
+                  background-color: rgba(243, 93, 218, 0.8);
+                  padding: 15px;
+                  border-radius: 15px;
+                  width: 15%;
+              }
+              fieldset{
+                  border:3px, solid rgb(250, 140, 204);
+                  padding: 10px;
+                  text-align: center;
+                  background-color: rgb(248, 122, 238);
+                  border-radius: 5px;
+                  border-radius: 8px;
+                  
+                }
+                .inputBox{
+                    position: relative;
+                }
+                inputUser{
+                    background: none;
+                    border: none;
+                    border-bottom: 1 px solid white;
+                    outline: none;
+                    font-size: 15px;
+                    width: 100%;
+                    letter-spacing: 2px;
+                }
+          </style>
 
-
-    </head>
-
+     </head>
 
     <body>
-        <div> 
-            <h1> Formulário  </h1>
-            <p> Complete as informaçãoes abaixo:</p>
-            <br>
-        </div>
-        <form>
+        <div class="box">
+        <form action="">
             <fieldset>
-                <div>
-                    <label for="name"> <strong> Nome </strong> </label>
-                    <input type= "text" name = "nome" id="nome" required>
+                <h1> <br> <strong>  Formulário de clientes </strong> </br></h1>
+                <br>
+
+                    <div class="inputBox">
+
+                    <label for="name"> <strong> Nome completo </strong> </label>
+                    <input type= "text" name = "nome" id="nome" required class="inputUser">
+
                 </div>
-                    <label for="sobrenome"> <strong>Sobrenome </strong></label>
-                    <input type = "text" name = sobrenome id ="sobrenome" required>
+                 <br>
+
+                    <label for="telefone"> <strong> Telefone</strong></label>
+                    <input type = "text" name = telefone id ="telefone" required class="inputUser">
             </fieldset>
+            <br>
+
                   <div>
-                      <label for="email"><strong>Email</strong> </label>
-                      <input type="email" name = email id = "email" required>
+
+                     <br> <label for="email"><strong>Email</strong> </label>
+                      <input type="email" name = email id = "email" required class="inputUser">
                   </div>
+                  <br>
+
+
                   <div> 
                       <Label for ="idade"><strong>Qual sua idade ?</strong> </Label> 
-                          <input type = "idade" name="idade" id= idade>
+                          <input type = "idade" name="idade" id="idade" class="inputUser">
                   </div>   
+                  <br>
+
+
                   <div>
                       <label> <strong>Qual é a data de seu aniversário?</strong> 
-                          <input type = "date"> 
+                          <input type = "date" name="data" id="data" class="inputUser"> 
                       </label>
                   </div>
+                  <br>
+
+
+
                   <div>
                       <label> Estado </label>
                       <select id="Estados">
@@ -51,22 +106,30 @@
                           <option>SC</option>
                           <option>PB</option>
                       </select>
+                      </div>
+                      <br>
                       <fieldset>
+
 
                         <div>
                             <label> Selecione seu sexo:</label><br><br>
-                            <input type="checkbox" id="sexo" name="sexo" value="Masculino">
+                            <input type="radio" id="genero" name="genero" value="Masculino">
                             <label for="sexo">Masculino</label>
-                            <input type = "checkbox" id="Area" name="area" value="Femenino"> 
+                            <input type = "radio" id="genero" name="genero" value="Femenino"> 
                             <label for="sexo">Feminino</label>
+                            <input type = "radio" id= "genero" name="genero" value= "outros">
+                            <label for="sexo">outros</label>
                         </div>
+                        <br>
                       </fieldset>
                   <div>
-                      <br>
+                      
                       <label><strong> Fale sobre seus jogos favoritos:</strong></label>
-                      <textarea row="8" style= "width: 26em" id="jogos favoritos" name="jogos favoritos"></textarea>
+                      <br>
+                      <textarea row="8" style= "width: 16em" id="jogos favoritos" name="jogos favoritos"></textarea>
                       </div>   
                       <button type "subimit"> Salvar</button>
+                    </div>
         </form>
      </body>   
 </html>
