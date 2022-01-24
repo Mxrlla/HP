@@ -7,6 +7,9 @@ padding: 0;
     font-family: sans-serif;
     color:blueviolet;
     margin-left: 10%;
+    background: #F0F8FF ;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 fieldset{
@@ -35,4 +38,44 @@ input, select, textarea, button{
     display: block;
 }
 
-.campo input (type="text"), .campo input(type="email"), .cargo select,.cargo select areatext()
+fieldset{
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input type= "text", .campo input type= "email", .cargo select,.cargo select areatext{
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px, rgba(0,0,0.2);
+    display: block;
+} 
+
+.camposelect option{
+    padding-right: 1em;
+}
+
+.campo input: focus, .camposelect:focus, .campos textarea:focus{
+    background: #e0e0f8;
+}
+
+.botao{
+    font-size: 1.2em;
+    background: #59429d;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffff;
+    padding: 0.2em 0.6em ;
+    box-shadow: 2px 2px 2px rbga(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rbga(0,0,0,0.5);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.botao:haver{
+    background: #ccbbff;
+    box-shadow: inset 2px, 2px 2px rbga(0,0,0,0.2);
+    text-shadow: none;
+}
